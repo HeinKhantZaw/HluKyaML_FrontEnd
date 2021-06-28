@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Divider, Body1, Fab } from "ui-neumorphism";
-import {FaFacebookSquare, FaFacebookMessenger, FaTelegram} from 'react-icons/fa';
+import {FaFacebookSquare, FaTelegram} from 'react-icons/fa';
 
 const About = () => {
   //   const countryState = useReducerAPI('https://simplemaps.com/static/data/country-cities/mm/mm.json')
