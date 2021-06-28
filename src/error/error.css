@@ -1,0 +1,12 @@
+.text {
+  color: #e4ebf5;
+  text-shadow: 4px 4px 8px #7d8187, -4px -4px 8px #ffffff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.error-title {
+  font-size: 6em;
+}
+.error-text {
+  font-size: 3em;
+}
