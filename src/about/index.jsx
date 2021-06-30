@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Divider, Body1, Fab } from "ui-neumorphism";
-import {FaFacebookSquare, FaTelegram} from 'react-icons/fa';
+import { FaFacebookSquare, FaTelegram } from "react-icons/fa";
 
 const About = () => {
   //   const countryState = useReducerAPI('https://simplemaps.com/static/data/country-cities/mm/mm.json')
@@ -38,11 +38,11 @@ const About = () => {
           ကြော်ငြာကြည့်ရှု့နှုန်းများလေ အလှူငွေရလေပါပဲ။ Cost Per Mille (Cost Per
           Thousand) ကြည့်ရှု့သူ အယောက် ၁၀၀၀ အတွက် ရရှိငွေ 3 USD သဘောမျိုးပါ။
           အတိုချုံး ပြောရရင် ကြော်ငြာကြည့်တဲ့သူအပေါ်မူတည်ပြီး အလှူ‌ငွေရရှိမှာပါ။
-          ငွေကိုတော့ PayPal or Payoneer တို့နဲ့ ထုတ်ရပါတယ်။ (၅ရက်ရနေ
+          ငွေကိုတော့ PayPal or Payoneer တို့နဲ့ ထုတ်ရပါတယ်။ (၅ရက်ကနေ
           ၇ရက်အတွင်းတော့ စောင့်ရလေ့ရှိပါတယ်) အဓိကက စာဖတ်ဝါသနာပါတဲ့သူတွေအတွက်
           ရည်ရွယ်ပါတယ်။ စာဖတ်ဝါသနာမပါလည်း Link ကို Clip လုပ်ပြီး
           ကြော်ငြာခဏစောင့်ပြီး ပေါ်လာတာနဲ့ Skip နှိပ်ပြီး ပြန်ထွက်ရင်
-          အဆင်ပြေပါတယ်။ ခုလောလောဆယ်တော့ ကျွန်တော်တို့က English EBook တွေကို
+          အဆင်ပြေပါတယ်။ ခုလောလောဆယ်တော့ ကျွန်တော်တို့က English E-Book တွေကို
           ဦးစားပေးတင်ပေးသွားမှာပါ။ နောက်ပိုင်းတော့ မြန်မာစာအုပ်တချို့ကိုပါ
           Review ရေး‌ပေးပြီး download လုပ်လို့ရအောင်စဉ်းစားထားပါတယ်။ Website
           လည်းရှိတဲ့အတွက် လိုချင်တဲ့စာအုပ်တွေကို တစုတစည်းတည်းလည်း
@@ -57,24 +57,28 @@ const About = () => {
           ကောက်ခံရရှိသမျှငွေကိုလည်း အလှူစာရင်းနှင့်တကွ တင်ပြပေးသွားမှာပါ။
           နေ့တိုင်းဖတ်မယ် နေ့တိုင်းလှူမယ်။ များများဖတ်မယ် များများလှူမယ်။
         </Body1>
-        <div className="row">
-          <div className="col-md-3"/>
-          <Fab className="col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center" onClick={function () {
-                window.open(`https://www.facebook.com/hlukyaml/`);
-              }}>
-          &nbsp;
-          <FaFacebookSquare/>
-          &nbsp;Facbook&nbsp;
-        </Fab>
-        <Fab className="col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center" onClick={function () {
-                window.open(`https://t.me/hlukyaml`);
-              }}>
-          &nbsp;
-          <FaTelegram/>
-          &nbsp;Telegram&nbsp;
-        </Fab>
-        <div className="col-md-3"/>
-          </div>
+        <div className='row'>
+          <div className='col-md-3' />
+          <Fab
+            className='col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center'
+            onClick={function () {
+              window.open(`https://www.facebook.com/hlukyaml/`);
+            }}>
+            &nbsp;
+            <FaFacebookSquare />
+            &nbsp;Facbook&nbsp;
+          </Fab>
+          <Fab
+            className='col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center'
+            onClick={function () {
+              window.open(`https://t.me/hlukyaml`);
+            }}>
+            &nbsp;
+            <FaTelegram />
+            &nbsp;Telegram&nbsp;
+          </Fab>
+          <div className='col-md-3' />
+        </div>
       </Card>
     </>
   );

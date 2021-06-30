@@ -1,3 +1,12 @@
 .myCard {
   padding: 1em;
 }
+.neu-flat {
+  background-color: #E4EBF5 !important;
+  box-shadow: 5px 5px 10px #CAD3EA , -5px -5px 10px #F2F5FA !important;
+}
+
+.neu-pressed {
+  background-color: #E4EAF4 !important;
+  box-shadow: inset 5px 5px 10px #D6DEEF, inset -5px -5px 10px #EBF1F9 !important;
+}
