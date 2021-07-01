@@ -22,7 +22,7 @@ export default class Home extends Component {
     axios
       .get(`https://hlukyamel.pythonanywhere.com/api/bookList/`)
       .then((result) => {
-        const data = result.data.slice(0).reverse();
+        const data = result.data;
         const slice = data.slice(
           this.state.offset,
           this.state.offset + this.state.perPage
