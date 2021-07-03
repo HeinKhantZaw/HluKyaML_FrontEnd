@@ -3,7 +3,6 @@ import Home from "./home";
 import Detail from "./detail";
 import About from "./about";
 import Error from "./error";
-import Categories from "./categories"
 import React, { Component } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
