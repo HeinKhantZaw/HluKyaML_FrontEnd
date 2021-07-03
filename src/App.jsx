@@ -3,6 +3,7 @@ import Home from "./home";
 import Detail from "./detail";
 import About from "./about";
 import Error from "./error";
+import Categories from "./categories"
 import React, { Component } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -11,7 +12,7 @@ import { overrideThemeVariables } from "ui-neumorphism";
 class App extends Component {
   componentDidMount() {
     // takes an object of css variable key-value pairs
-    overrideThemeVariables({
+    overrideThemeVariables( {
       "--light-bg": "#E4EBF5",
       "--light-bg-dark-shadow": "#bec8e4",
       "--light-bg-light-shadow": "#ffffff",
@@ -50,6 +51,10 @@ class App extends Component {
                   path={`${process.env.PUBLIC_URL}/about`}
                   component={About}
                 />
+                {/* <Route
+                  path={`${process.env.PUBLIC_URL}/categories`}
+                  component={Categories}
+                /> */}
                 <Route path='*' component={Error} />
               </Switch>
             </Router>
