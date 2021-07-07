@@ -4,6 +4,7 @@ import "./detail.css";
 import { useReducerAPI } from "../api";
 import { useParams } from "react-router-dom";
 import BookLoadingAnim from "../components/bookLoadingAnim";
+import { Link } from "react-router-dom";
 
 const Detail = () => {
   let { book_id } = useParams();
@@ -25,9 +26,14 @@ const Detail = () => {
           <div className='book-details'>
             <H5>{results.bookTitle}</H5>
             <p className='tagline'>{results.author}</p>
-            <Chip label className='ma-3' size='large' type='info'>
-              {results.bookCategory.categoryName}
-            </Chip>
+            <Link
+              to={{
+                pathname: `${process.env.PUBLIC_URL}/genres/${results.bookCategory.categoryName}`,
+              }}>
+              <Chip label className='ma-3' size='large' type='info'>
+                {results.bookCategory.categoryName}
+              </Chip>
+            </Link>
             <Divider dense elevated />
             <p>{results.review} </p>
             <Divider dense />
