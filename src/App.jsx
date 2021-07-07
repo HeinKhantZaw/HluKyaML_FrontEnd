@@ -6,7 +6,9 @@ import Error from "./error";
 import React, { Component } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import Genres from "./components/genreView";
 import { overrideThemeVariables } from "ui-neumorphism";
+import GenresView from "./genres";
 
 class App extends Component {
   componentDidMount() {
@@ -50,10 +52,15 @@ class App extends Component {
                   path={`${process.env.PUBLIC_URL}/about`}
                   component={About}
                 />
-                {/* <Route
-                  path={`${process.env.PUBLIC_URL}/categories`}
-                  component={Categories}
-                /> */}
+                <Route
+                  exact path={`${process.env.PUBLIC_URL}/genres/:genre_name`}
+                  component={GenresView}
+                />
+                <Route
+                  path={`${process.env.PUBLIC_URL}/genres`}
+                  component={Genres}
+                />
+                 
                 <Route path='*' component={Error} />
               </Switch>
             </Router>

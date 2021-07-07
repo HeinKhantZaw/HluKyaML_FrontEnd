@@ -20,11 +20,11 @@ const Header = () => {
                   <a href={`${process.env.PUBLIC_URL}/`}>Home</a>
                 </Button>
               </li>
-              {/* <li>
+              <li>
                 <Button depressed size='large'>
-                  <a href={`${process.env.PUBLIC_URL}/categories`}>Categories</a>
+                  <a href={`${process.env.PUBLIC_URL}/genres`}>Genres</a>
                 </Button>
-              </li> */}
+              </li>
               <li>
                 <Button depressed size='large'>
                   <a href={`${process.env.PUBLIC_URL}/about`}>About</a>
