@@ -13,7 +13,7 @@ export default class Base extends Component {
       loading: true,
       offset: 0,
       data: [],
-      perPage: 9,
+      perPage: 12,
       currentPage: 0,
       link: this.props.linkFromParent,
       title: this.props.titleFromParent,

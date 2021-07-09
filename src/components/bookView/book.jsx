@@ -14,47 +14,45 @@ const Book = ({
   downloadLink,
   bookCategory,
 }) => (
-  <>
-    <div className='col d-inline-flex justify-content-center'>
+  <div className='col d-inline-flex justify-content-center'>
+    <Link
+      to={{
+        pathname: `${process.env.PUBLIC_URL}/detail/${id}`,
+        state: [
+          {
+            id: id,
+            bookTitle: bookTitle,
+            bookCover: bookCover,
+            author: author,
+            review: review,
+            downloadLink: downloadLink,
+            bookCategory: bookCategory,
+          },
+        ],
+      }}>
       <Card
         className='bookCard'
-        width={280}
-        height={550}
+        width={230}
+        height={350}
         style={{ marginTop: "30px", marginBottom: "30px" }}>
         <img
           className='rounded'
           src={bookCover}
           alt={bookTitle}
-          style={{ height: "400px", width: "280px" }}
+          style={{ height: "290px", width: "230px" }}
         />
         <CardContent>
-          <H5>
-            <TextTruncate line={1} text={bookTitle} />
-          </H5>
-          <TextTruncate line={1} text={author} element='p' />
+          {/* <H5>
+          <TextTruncate line={1} text={bookTitle} />
+        </H5> */}
+          <TextTruncate line={2} text={author} element='h6' />
         </CardContent>
         <CardAction className='justify-content-center'>
-          <Link
-            to={{
-              pathname: `${process.env.PUBLIC_URL}/detail/${id}`,
-              state: [
-                {
-                  id: id,
-                  bookTitle: bookTitle,
-                  bookCover: bookCover,
-                  author: author,
-                  review: review,
-                  downloadLink: downloadLink,
-                  bookCategory: bookCategory,
-                },
-              ],
-            }}>
-            <Button rounded>View</Button>
-          </Link>
+          {/* <Button rounded>View</Button> */}
         </CardAction>
       </Card>
-    </div>
-  </>
+    </Link>
+  </div>
 );
 
 export default Book;
@@ -66,4 +64,5 @@ Book.propTypes = {
   bookCover: PropTypes.string,
   review: PropTypes.string,
   downloadLink: PropTypes.string,
+  bookCategory: PropTypes.object,
 };
