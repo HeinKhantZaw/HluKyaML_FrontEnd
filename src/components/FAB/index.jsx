@@ -12,21 +12,21 @@ const Dark_Light_Btn = () => {
   });
   return (
     <>
-      <button class='dark_mode_btn play-pause'>
-        <div class='icon-container'>
-          <svg class='icon play'>
+      <button className='dark_mode_btn play-pause'>
+        <div className='icon-container'>
+          <svg className='icon play'>
             <use xlinkHref='#play'></use>
           </svg>
         </div>
-        <div class='icon-container'>
-          <svg class='icon pause'>
+        <div className='icon-container'>
+          <svg className='icon pause'>
             <use xlinkHref='#pause'></use>
           </svg>
         </div>
       </button>
       <svg
         xmlns='http://www.w3.org/2000/svg'
-        class='icons'
+        className='icons'
         width='240'
         height='240'>
         <symbol id='play' viewBox='0 0 384 384'>
