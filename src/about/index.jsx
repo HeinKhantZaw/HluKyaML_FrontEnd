@@ -56,18 +56,14 @@ const About = () => {
         <div className='col-md-3' />
         <Fab
           className='col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center'
-          onClick={function () {
-            window.open(`https://www.facebook.com/hlukyaml/`);
-          }}>
+          onClick={openFb}>
           &nbsp;
           <FaFacebookSquare />
           &nbsp;Facbook&nbsp;
         </Fab>
         <Fab
           className='col-sm-12 col-md-3 my-4 d-inline-flex justify-content-center'
-          onClick={function () {
-            window.open(`https://t.me/hlukyaml`);
-          }}>
+          onClick={openTelegram}>
           &nbsp;
           <FaTelegram />
           &nbsp;Telegram&nbsp;
@@ -77,5 +73,10 @@ const About = () => {
     </Card>
   );
 };
-
+const openFb = () => {
+  window.open(`https://www.facebook.com/hlukyaml/`);
+};
+const openTelegram = () => {
+  window.open(`https://t.me/hlukyaml`);
+};
 export default About;

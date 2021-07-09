@@ -16,25 +16,24 @@ const Genres = () => {
           <Card inset rounded className='p-3'>
             <div className='row'>
               {categoryList.data.map((item) => (
-                <>
-                  <div className='col d-inline-flex justify-content-center'>
-                    <Card className='bookCard p-3 m-3' width={240} height={150}>
-                      <H6 className='text-center'>{item.categoryName}</H6>
-                      <Body1 className='text-center'>
-                        {item.num_books}{" "}
-                        {item.num_books === 1 ? "book" : "books"}
-                      </Body1>
-                      <CardAction className='justify-content-center'>
-                        <Link
-                          to={{
-                            pathname: `${process.env.PUBLIC_URL}/genres/${item.categoryName}`
-                          }}>
-                          <Button depressed rounded>View</Button>
-                        </Link>
-                      </CardAction>
-                    </Card>
-                  </div>
-                </>
+                <div className='col d-inline-flex justify-content-center'>
+                  <Card className='bookCard p-3 m-3' width={240} height={150}>
+                    <H6 className='text-center'>{item.categoryName}</H6>
+                    <Body1 className='text-center'>
+                      {item.num_books} {item.num_books === 1 ? "book" : "books"}
+                    </Body1>
+                    <CardAction className='justify-content-center'>
+                      <Link
+                        to={{
+                          pathname: `${process.env.PUBLIC_URL}/genres/${item.categoryName}`,
+                        }}>
+                        <Button depressed rounded>
+                          View
+                        </Button>
+                      </Link>
+                    </CardAction>
+                  </Card>
+                </div>
               ))}
             </div>
           </Card>

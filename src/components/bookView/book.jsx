@@ -1,4 +1,4 @@
-import { Card, CardContent, CardAction } from "ui-neumorphism";
+import { Card, CardContent } from "ui-neumorphism";
 import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
@@ -42,14 +42,8 @@ const Book = ({
           style={{ height: "290px", width: "230px" }}
         />
         <CardContent>
-          {/* <H5>
-          <TextTruncate line={1} text={bookTitle} />
-        </H5> */}
           <TextTruncate line={2} text={author} element='h6' />
         </CardContent>
-        <CardAction className='justify-content-center'>
-          {/* <Button rounded>View</Button> */}
-        </CardAction>
       </Card>
     </Link>
   </div>

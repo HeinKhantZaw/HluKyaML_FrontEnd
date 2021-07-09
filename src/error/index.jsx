@@ -11,9 +11,7 @@ const Error = () => {
       <div className='row'>
         <Fab
           className='col d-inline-flex justify-content-center'
-          onClick={function () {
-            window.open(`${process.env.PUBLIC_URL}/`,"_self");
-          }}>
+          onClick={goBackHome}>
           &nbsp;
           <span style={{ fontSize: "30px", color: "#46484b" }}>&#127968;</span>
           &nbsp;Back To Home&nbsp;
@@ -22,5 +20,7 @@ const Error = () => {
     </>
   );
 };
-
+const goBackHome = () => {
+  window.open(`${process.env.PUBLIC_URL}/`,"_self");
+}
 export default Error;
