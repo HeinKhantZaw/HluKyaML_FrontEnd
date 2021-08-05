@@ -33,7 +33,7 @@ const Book = ({
       <Card
         className='bookCard'
         width={230}
-        height={350}
+        height={380}
         style={{ marginTop: "30px", marginBottom: "30px" }}>
         <img
           className='rounded'
@@ -42,7 +42,8 @@ const Book = ({
           style={{ height: "290px", width: "230px" }}
         />
         <CardContent>
-          <TextTruncate line={2} text={author} element='h6' />
+          <TextTruncate line={1} text={bookTitle} element='h6' />
+          <TextTruncate line={2} text={author}  />
         </CardContent>
       </Card>
     </Link>
