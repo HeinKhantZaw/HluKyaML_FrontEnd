@@ -6,7 +6,7 @@ import { Card, CardAction, H6, Button, Body1 } from "ui-neumorphism";
 
 const Genres = () => {
   const categoryList = useReducerAPI(
-    "https://hlukyamel.pythonanywhere.com/api/categoryList/"
+    "https://hlukyamel.pythonanywhere.com/api/bookCategoryList/"
   );
   if (categoryList && categoryList.data) {
     return (
